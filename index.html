@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reservation</title>
+</head>
+<body>
+	<h1>Reservations</h1>
+   <div>
+	<button id="confirmAllButton" onclick="handlers.confirmAll()">Confirm all</button>
+	<button id = "deleteAllButton" onclick="handlers.deleteAll()">Delete all</button>
+   </div>
+   <div>
+   	<button id="addRes" onclick="handlers.addRes()">add reservation</button>
+   	<input id="addResInput" type="text" name="addResInput">
+	</div>
+	<div>
+		<button onclick="handlers.changeRes()">change reservation</button>
+		<input id="addResNumber" type="number" name="addResNumber">
+		<input id="addNewRes" type="text" name="addNewRes">
+	</div>
+	<ul id="reservations">
+
+	</ul>
+	<div>
+	<p>confirmed reservations:</p>
+	<p id="confirmedRes"></p>
+	</div>
+	<div>
+		<p>unconfirmed reservations:</p>
+		<p id="unconfirmedRes"></p>
+	</div>
+	
+<script type="text/javascript" src="js.js"></script>
+</body>
+</html>
